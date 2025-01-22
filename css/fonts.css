@@ -1,0 +1,89 @@
+/**************************************************************************************************
+ * Copyright (c) 2024-2025 PANDURANCE RACING                                                      *
+ *                                                                                                *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy                   *
+ * of this software and associated documentation files (the "Software"), to deal                  *
+ * in the Software without restriction, including without limitation the rights                   *
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell                      *
+ * copies of the Software, and to permit persons to whom the Software is                          *
+ * furnished to do so, subject to the following conditions:                                       *
+ *                                                                                                *
+ * The above copyright notice and this permission notice shall be included in all                 *
+ * copies or substantial portions of the Software.                                                *
+ *                                                                                                *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR                     *
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,                       *
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE                    *
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER                         *
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,                  *
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE                  *
+ * SOFTWARE.                                                                                      *
+ **************************************************************************************************/
+
+:root {
+    --body-font-size: 14pt;
+    --small-font-size: 10pt;
+    --medium-font-size: 18pt;
+    --large-font-size: 21pt;
+    --very-large-font-size: 72pt;
+
+    --sans-serif: "FNT-Normal", sans-serif;
+    --sans-serif-italic: "FNT-Normal-I", sans-serif;
+}
+
+@font-face {
+    font-family: 'FNT-Thin';
+    src: url('../fonts/TN-Thin.ttf');
+}
+@font-face {
+    font-family: 'FNT-Thin-I';
+    src: url('../fonts/TN-ThinItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FNT-Light';
+    src: url('../fonts/TN-Light.ttf');
+}
+@font-face {
+    font-family: 'FNT-Light-I';
+    src: url('../fonts/TN-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FNT-Normal';
+    src: url('../fonts/TN-Normal.ttf');
+}
+@font-face {
+    font-family: 'FNT-Normal-I';
+    src: url('../fonts/TN-NormalItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FNT-Medium';
+    src: url('../fonts/TN-Medium.ttf');
+}
+@font-face {
+    font-family: 'FNT-Medium-I';
+    src: url('../fonts/TN-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: 'FNT-Bold';
+    src: url('../fonts/TN-Bold.ttf');
+}
+@font-face {
+    font-family: 'FNT-Bold-I';
+    src: url('../fonts/TN-BoldItalic.ttf');
+}
+
+strong {
+    font-family: "FNT-Bold";
+
+    em {
+        font-family: "FNT-Bold-I";
+    }
+}
+
+em {
+    font-family: "FNT-Normal-I";
+}

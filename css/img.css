@@ -1,0 +1,71 @@
+/**************************************************************************************************
+ * Copyright (c) 2024-2025 PANDURANCE RACING                                                      *
+ *                                                                                                *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy                   *
+ * of this software and associated documentation files (the "Software"), to deal                  *
+ * in the Software without restriction, including without limitation the rights                   *
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell                      *
+ * copies of the Software, and to permit persons to whom the Software is                          *
+ * furnished to do so, subject to the following conditions:                                       *
+ *                                                                                                *
+ * The above copyright notice and this permission notice shall be included in all                 *
+ * copies or substantial portions of the Software.                                                *
+ *                                                                                                *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR                     *
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,                       *
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE                    *
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER                         *
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,                  *
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE                  *
+ * SOFTWARE.                                                                                      *
+ **************************************************************************************************/
+
+img {
+    border: 0.1mm solid black;
+    border-radius: var(--medium-border-radius);
+    margin-bottom: 0;
+}
+
+table.emu-img-table {
+    break-inside: avoid;
+    padding: 2mm;
+    table-layout: fixed;
+}
+
+div.emu-img-desc-container {
+    border-left: 2mm solid grey;
+    border-radius: 0.75mm;
+
+    font-size: 8pt !important;
+
+    background: repeating-linear-gradient(
+        -45deg,
+        hsl(0 0% 90% / 75%),
+        hsl(0 0% 90% / 75%) 1cm,
+        hsl(0 0% 80% / 75%) 1cm,
+        hsl(0 0% 80% / 75%) 2cm
+    );
+    hyphens: auto;
+
+    padding-left: 1mm;
+}
+
+table.emu-img-table img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+span.emu-img-desc {
+    border-radius: 0.75mm;
+    font-family: "FNT-Thin";
+
+    height: var(--img-desc-line-height);
+    line-height: var(--img-desc-line-height);
+}
+
+span.emu-img-count {
+    font-stretch: condensed;
+    font-family: "FNT-Bold";
+    margin-right: 2mm;
+    padding-bottom: 0.1mm;
+}

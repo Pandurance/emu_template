@@ -1,0 +1,84 @@
+/**************************************************************************************************
+ * Copyright (c) 2024-2025 PANDURANCE RACING                                                      *
+ *                                                                                                *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy                   *
+ * of this software and associated documentation files (the "Software"), to deal                  *
+ * in the Software without restriction, including without limitation the rights                   *
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell                      *
+ * copies of the Software, and to permit persons to whom the Software is                          *
+ * furnished to do so, subject to the following conditions:                                       *
+ *                                                                                                *
+ * The above copyright notice and this permission notice shall be included in all                 *
+ * copies or substantial portions of the Software.                                                *
+ *                                                                                                *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR                     *
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,                       *
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE                    *
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER                         *
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,                  *
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE                  *
+ * SOFTWARE.                                                                                      *
+ **************************************************************************************************/
+
+@import "fonts.css";
+@import "title_page.css";
+@import "headers.css";
+@import "block.css";
+@import "colors.css";
+@import "paged.css";
+@import "img.css";
+@import "ref.css";
+@import "lists.css";
+
+:root {
+    --small-border-radius: 0.75mm;
+    --medium-border-radius: 2mm;
+
+    counter-reset: page 0;
+    --img-desc-line-height: 10pt;
+}
+
+.emu-body-container {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-fill: auto;
+    column-rule: 0.1mm solid;
+
+    padding-right: 0.25in;
+
+    hyphens: auto;
+}
+
+html .emu-title-page {
+    background-color: hsl(0, 0%, 80%);
+}
+
+body, div.emu-body-container {
+    font-family: var(--sans-serif);
+}
+
+table:not(.emu-img-table, .emu-title-table) {
+    border: 0.5mm solid black;
+    border-collapse: collapse;
+    padding-left: 3mm;
+
+    th {
+        border-bottom: 0.5mm solid black;
+        background-color: rgb(from var(--secondary-light) r g b / 45%);
+    }
+
+    tr {
+        border-bottom: 0.1mm solid black;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 1mm 5mm;
+    }
+
+    th, .emphasis {
+        font-weight: var(--extra-bold);
+        font-stretch: 75%;
+    }
+}

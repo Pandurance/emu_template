@@ -1,0 +1,143 @@
+/**************************************************************************************************
+ * Copyright (c) 2024-2025 PANDURANCE RACING                                                      *
+ *                                                                                                *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy                   *
+ * of this software and associated documentation files (the "Software"), to deal                  *
+ * in the Software without restriction, including without limitation the rights                   *
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell                      *
+ * copies of the Software, and to permit persons to whom the Software is                          *
+ * furnished to do so, subject to the following conditions:                                       *
+ *                                                                                                *
+ * The above copyright notice and this permission notice shall be included in all                 *
+ * copies or substantial portions of the Software.                                                *
+ *                                                                                                *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR                     *
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,                       *
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE                    *
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER                         *
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,                  *
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE                  *
+ * SOFTWARE.                                                                                      *
+ **************************************************************************************************/
+
+.header {
+    position: relative;
+    text-decoration: none;
+    font-stretch: 80%;
+    padding: 1mm;
+
+    color: white;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    left: -0.5mm;
+    bottom: 0.5mm;
+
+    border-radius: 2mm;
+
+    width: 100%;
+    height: calc(1em + 0.5mm);
+    padding: 0.5mm;
+
+    background: var(--secondary);
+    z-index: -1;
+}
+
+h3 .header, h4 .header {
+    position: relative;
+    text-decoration: none;
+    font-stretch: 80%;
+    padding: 1mm;
+
+    color: var(--secondary);
+}
+
+h3 .header::after, h4 .header::after {
+    content: "";
+    background: transparent !important;
+    z-index: -1;
+}
+
+div.emu-heading-container {
+    position: absolute;
+    left: -0.75in;
+    top: -0.75in;
+    width: 100%;
+    height: 2em;
+
+    margin: 0;
+    break-before: page;
+}
+
+h1.emu-chapter-heading {
+    margin-bottom: 0.125in;
+
+    font-family: "FNT-Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 36pt;
+    color: var(--primary-light);
+    -webkit-text-fill-color: var(--primary-light);
+    -webkit-text-stroke: 0.5mm var(--primary);
+    padding: 0;
+
+    background-image: url("../img/_default/HEADER_BG.svg");
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+span.emu-heading-doc-id, span.emu-heading-doc-name {
+    font-size: var(--body-font-size);
+    color: var(--primary);
+    -webkit-text-stroke-width: 0;
+    -webkit-text-fill-color: var(--primary);
+}
+
+span.emu-heading-doc-name {
+    color: var(--primary-light);
+    -webkit-text-fill-color: var(--primary-light);
+}
+
+h2 {
+    font-family: "FNT-Bold", sans-serif;
+    font-size: var(--large-font-size);
+    hyphens: auto;
+}
+
+h3 {
+    font-family: "FNT-Medium", sans-serif;
+    font-size: var(--medium-font-size);
+    hyphens: auto;
+}
+
+h4.emu-block-header {
+    /* Block title will be displayed as block, others inline. */
+    display: block !important;
+    font-family: "FNT-Bold", sans-serif;
+    font-size: var(--body-font-size);
+}
+
+h4:not(.emu-block-header) {
+    font-size: var(--body-font-size);
+    hyphens: auto;
+    display: inline;
+
+    margin-right: 3mm;
+}
+
+h3::before, h3::after {
+    content: "";
+    border-right: 2mm solid var(--secondary);
+    border-radius: 2mm 0 0 2mm;
+}
+
+h3::after {
+    border-radius: 0 2mm 2mm 0;
+}
+
+h4:not(.emu-block-header)::after {
+    content: "";
+    border-left: 2mm solid var(--secondary-light);
+    border-radius: 2mm;
+}

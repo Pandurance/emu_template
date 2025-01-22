@@ -1,0 +1,63 @@
+/**************************************************************************************************
+ * Copyright (c) 2024-2025 PANDURANCE RACING                                                      *
+ *                                                                                                *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy                   *
+ * of this software and associated documentation files (the "Software"), to deal                  *
+ * in the Software without restriction, including without limitation the rights                   *
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell                      *
+ * copies of the Software, and to permit persons to whom the Software is                          *
+ * furnished to do so, subject to the following conditions:                                       *
+ *                                                                                                *
+ * The above copyright notice and this permission notice shall be included in all                 *
+ * copies or substantial portions of the Software.                                                *
+ *                                                                                                *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR                     *
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,                       *
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE                    *
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER                         *
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,                  *
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE                  *
+ * SOFTWARE.                                                                                      *
+ **************************************************************************************************/
+
+@page {
+    /* Turn off the margins to facilitate printing */
+    size: A3 landscape;
+
+    margin: 0.75in;
+    counter-increment: page 1;
+
+    @top-center {
+        position: absolute;
+        top: 0.75in;
+        right: 0.75in;
+
+        content: counter(page);
+        font-family: "FNT-Bold";
+        font-size: var(--medium-font-size);
+        color: var(--primary-light);
+
+        z-index: 999;
+    }
+
+    @right-middle {
+        font-family: "FNT-Light-I";
+        content: "Copyright (C) 2025 Team Name";
+        writing-mode: vertical-rl;
+        padding: 5mm;
+    }
+}
+
+@page :first {
+    counter-reset: page 0;
+
+    @right-middle {
+        content: "";
+    }
+}
+
+@media screen {
+    div.pagedjs_page {
+        border: 0.1mm solid black;
+    }
+}

@@ -19,61 +19,63 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE                  *
  * SOFTWARE.                                                                                      *
  **************************************************************************************************/
-
+/* General styles for header */
 .header {
     position: relative;
     text-decoration: none;
     font-stretch: 80%;
     padding: 1mm;
-
     color: white;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: -0.5mm;
+        bottom: 0.5mm;
+        border-radius: 2mm;
+        width: 100%;
+        height: calc(1em + 0.5mm);
+        padding: 0.5mm;
+        background: var(--secondary);
+        z-index: -1;
+    }
 }
 
-.header::after {
-    content: "";
-    position: absolute;
-    left: -0.5mm;
-    bottom: 0.5mm;
-
-    border-radius: 2mm;
-
-    width: 100%;
-    height: calc(1em + 0.5mm);
-    padding: 0.5mm;
-
-    background: var(--secondary);
-    z-index: -1;
-}
-
-h3 .header, h4 .header {
+/* Specific styles for h3 header and p with span header */
+h3 .header,
+h4 .header,
+p > span.header {
     position: relative;
     text-decoration: none;
     font-stretch: 80%;
     padding: 1mm;
-
     color: var(--secondary);
+
+    &::after {
+        content: "";
+        background: transparent !important;
+        z-index: -1;
+    }
+
+    p > span.header {
+        padding-left: 3mm;
+    }
 }
 
-h3 .header::after, h4 .header::after {
-    content: "";
-    background: transparent !important;
-    z-index: -1;
-}
-
+/* Styles for emu heading container */
 div.emu-heading-container {
     position: absolute;
     left: -0.75in;
     top: -0.75in;
     width: 100%;
     height: 2em;
-
     margin: 0;
     break-before: page;
 }
 
+/* Styles for emu chapter heading */
 h1.emu-chapter-heading {
     margin-bottom: 0.125in;
-
     font-family: "FNT-Black", sans-serif;
     text-transform: uppercase;
     font-size: 36pt;
@@ -81,24 +83,26 @@ h1.emu-chapter-heading {
     -webkit-text-fill-color: var(--primary-light);
     -webkit-text-stroke: 0.5mm var(--primary);
     padding: 0;
-
     background-image: url("../img/_default/HEADER_BG.svg");
     background-size: 100%;
     background-repeat: repeat;
 }
 
-span.emu-heading-doc-id, span.emu-heading-doc-name {
+/* Styles for emu heading document id and name */
+span.emu-heading-doc-id,
+span.emu-heading-doc-name {
     font-size: var(--body-font-size);
     color: var(--primary);
     -webkit-text-stroke-width: 0;
     -webkit-text-fill-color: var(--primary);
+
+    &.emu-heading-doc-name {
+        color: var(--primary-light);
+        -webkit-text-fill-color: var(--primary-light);
+    }
 }
 
-span.emu-heading-doc-name {
-    color: var(--primary-light);
-    -webkit-text-fill-color: var(--primary-light);
-}
-
+/* Styles for h2 and h3 */
 h2 {
     font-family: "FNT-Bold", sans-serif;
     font-size: var(--large-font-size);
@@ -109,35 +113,38 @@ h3 {
     font-family: "FNT-Medium", sans-serif;
     font-size: var(--medium-font-size);
     hyphens: auto;
+
+    &::before,
+    &::after {
+        content: "";
+        border-right: 2mm solid var(--secondary);
+        border-radius: 2mm 0 0 2mm;
+    }
+
+    &::after {
+        border-radius: 0 2mm 2mm 0;
+    }
 }
 
+/* Styles for emu block header */
 h4.emu-block-header {
-    /* Block title will be displayed as block, others inline. */
     display: block !important;
     font-family: "FNT-Bold", sans-serif;
     font-size: var(--body-font-size);
 }
 
-h4:not(.emu-block-header) {
+/* Styles for p with span header */
+p span.header {
     font-size: var(--body-font-size);
     hyphens: auto;
     display: inline;
-
+    background: transparent;
     margin-right: 3mm;
-}
+    padding-left: 3mm;
 
-h3::before, h3::after {
-    content: "";
-    border-right: 2mm solid var(--secondary);
-    border-radius: 2mm 0 0 2mm;
-}
-
-h3::after {
-    border-radius: 0 2mm 2mm 0;
-}
-
-h4:not(.emu-block-header)::after {
-    content: "";
-    border-left: 2mm solid var(--secondary-light);
-    border-radius: 2mm;
+    &::after {
+        content: "";
+        border-left: 2mm solid var(--secondary-light);
+        border-radius: 2mm;
+    }
 }

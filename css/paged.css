@@ -22,12 +22,9 @@
 
 @page {
     /* Turn off the margins to facilitate printing */
-    size: A3 landscape;
-
-    margin: 0.75in;
     counter-increment: page 1;
 
-    @top-center {
+    @top-right {
         position: absolute;
         top: 0.75in;
         right: 0.75in;
@@ -42,7 +39,6 @@
 
     @right-middle {
         font-family: "FNT-Light-I";
-        content: "Copyright (C) 2025 Team Name";
         writing-mode: vertical-rl;
         padding: 5mm;
     }

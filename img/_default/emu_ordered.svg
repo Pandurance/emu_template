@@ -3,23 +3,23 @@
   <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
   <defs>
     <style>
-      .st0 {
+      .main-body {
         fill: none;
         stroke-width: 1.5px;
       }
 
-      .st0, .st1 {
+      .main-body, .arrow-right {
         stroke: #dd733e;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
 
-      .st1 {
+      .arrow-right {
         fill: #f58351;
         stroke-width: 2px;
       }
     </style>
   </defs>
-  <polyline class="st0" points="25.7 -.3 33.3 8.1 25.8 17.2"/>
-  <polygon class="st1" points="0 0 0 16.9 19.1 16.9 26.5 8.4 19.1 0 0 0"/>
+  <polyline class="main-body" points="25.7 -.3 33.3 8.1 25.8 17.2"/>
+  <polygon class="arrow-right" points="0 0 0 16.9 19.1 16.9 26.5 8.4 19.1 0 0 0"/>
 </svg>

@@ -50,6 +50,10 @@
     @right-middle {
         content: "";
     }
+
+    @top-right {
+        content: "";
+    }
 }
 
 @media screen {

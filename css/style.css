@@ -20,15 +20,16 @@
  * SOFTWARE.                                                                                      *
  **************************************************************************************************/
 
-@import "fonts.css";
-@import "title_page.css";
-@import "headers.css";
+@import "annotations.css";
 @import "block.css";
 @import "colors.css";
-@import "paged.css";
+@import "fonts.css";
+@import "headers.css";
 @import "img.css";
-@import "ref.css";
 @import "lists.css";
+@import "paged.css";
+@import "ref.css";
+@import "title_page.css";
 
 :root {
     --small-border-radius: 0.75mm;

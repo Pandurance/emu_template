@@ -1,0 +1,15 @@
+.emu-annotations {
+    cursor: help;
+}
+
+#emu-annotations-tooltip {
+    position: absolute;
+}
+
+.emu-warning {
+    text-decoration: 1px orange wavy underline;
+}
+
+.emu-error {
+    text-decoration: 1px red wavy underline;
+}

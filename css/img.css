@@ -39,11 +39,11 @@ div.emu-img-desc-container {
     font-size: 8pt !important;
 
     background: repeating-linear-gradient(
-        -45deg,
-        hsl(0 0% 90% / 75%),
-        hsl(0 0% 90% / 75%) 1cm,
-        hsl(0 0% 80% / 75%) 1cm,
-        hsl(0 0% 80% / 75%) 2cm
+            -45deg,
+            hsl(0 0% 90% / 75%),
+            hsl(0 0% 90% / 75%) 1cm,
+            hsl(0 0% 80% / 75%) 1cm,
+            hsl(0 0% 80% / 75%) 2cm
     );
     hyphens: auto;
 
@@ -66,6 +66,7 @@ span.emu-img-desc {
 span.emu-img-count {
     font-stretch: condensed;
     font-family: "FNT-Bold";
+    color: var(--35-gray);
     margin-right: 2mm;
     padding-bottom: 0.1mm;
 }

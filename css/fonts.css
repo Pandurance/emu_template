@@ -35,6 +35,7 @@
     font-family: 'FNT-Thin';
     src: url('../fonts/TN-Thin.ttf');
 }
+
 @font-face {
     font-family: 'FNT-Thin-I';
     src: url('../fonts/TN-ThinItalic.ttf');
@@ -44,6 +45,7 @@
     font-family: 'FNT-Light';
     src: url('../fonts/TN-Light.ttf');
 }
+
 @font-face {
     font-family: 'FNT-Light-I';
     src: url('../fonts/TN-LightItalic.ttf');
@@ -53,6 +55,7 @@
     font-family: 'FNT-Normal';
     src: url('../fonts/TN-Normal.ttf');
 }
+
 @font-face {
     font-family: 'FNT-Normal-I';
     src: url('../fonts/TN-NormalItalic.ttf');
@@ -62,6 +65,7 @@
     font-family: 'FNT-Medium';
     src: url('../fonts/TN-Medium.ttf');
 }
+
 @font-face {
     font-family: 'FNT-Medium-I';
     src: url('../fonts/TN-MediumItalic.ttf');
@@ -71,6 +75,7 @@
     font-family: 'FNT-Bold';
     src: url('../fonts/TN-Bold.ttf');
 }
+
 @font-face {
     font-family: 'FNT-Bold-I';
     src: url('../fonts/TN-BoldItalic.ttf');

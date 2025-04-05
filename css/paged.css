@@ -40,7 +40,16 @@
     @right-middle {
         font-family: "FNT-Light-I";
         writing-mode: vertical-rl;
+        font-size: var(--small-font-size);
         padding: 5mm;
+        color: var(--35-gray);
+    }
+
+    @bottom-left {
+        font-family: "FNT-Light-I";
+        font-size: var(--small-font-size);
+        padding: 5mm;
+        color: var(--35-gray);
     }
 }
 
@@ -52,6 +61,10 @@
     }
 
     @top-right {
+        content: "";
+    }
+
+    @bottom-left {
         content: "";
     }
 }

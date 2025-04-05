@@ -29,4 +29,6 @@
 
     --secondary: rgb(71, 150, 93);
     --secondary-light: rgb(139, 201, 133);
+
+    --35-gray: hsl(0, 0%, 35%);
 }

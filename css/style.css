@@ -31,6 +31,7 @@
 @import "paged.css";
 @import "ref.css";
 @import "title_page.css";
+@import "toc.css";
 
 :root {
     --small-border-radius: 0.75mm;

@@ -1,0 +1,15 @@
+div.emu-toc-row {
+    display: flex;
+    align-items: center;
+
+    .emu-toc-tab {
+        display: inline-block;
+        width: 0.25in;
+    }
+
+    .emu-toc-sep {
+        flex-grow: 1;
+        border-bottom: 0.1mm dashed black;
+        margin: 0 5px;
+    }
+}

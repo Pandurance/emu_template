@@ -40,6 +40,11 @@ div.emu-ref-container {
     margin-top: 10mm;
 }
 
+div.emu-ref-container:empty {
+    display: none;
+    border-top: none;
+}
+
 div.emu-ref-container > span.heading {
     font-size: var(--medium-font-size);
 }

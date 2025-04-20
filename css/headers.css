@@ -19,9 +19,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE                  *
  * SOFTWARE.                                                                                      *
  **************************************************************************************************/
+
 /* General styles for header */
 .header {
     position: relative;
+    display: inline-block;
     text-decoration: none;
     font-stretch: 80%;
     padding: 1mm;
@@ -30,6 +32,7 @@
     &::after {
         content: "";
         position: absolute;
+        display: block;
         left: -0.5mm;
         bottom: 0.5mm;
         border-radius: 2mm;
@@ -43,7 +46,7 @@
 
 /* Specific styles for h3 header and p with span header */
 h3 .header,
-h4 .header,
+h4 .header, /* For the reference section title only */
 p > span.header {
     position: relative;
     text-decoration: none;
@@ -147,4 +150,23 @@ p span.header {
         border-left: 2mm solid var(--secondary-light);
         border-radius: 2mm;
     }
+}
+
+:root {
+    --heading-number-width: 0.5in;
+}
+
+/* Header number styling */
+span.header-number {
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ / Edge */
+
+    width: var(--heading-number-width);
+    display: inline-block;
+}
+
+h2 span.header-number {
+    width: calc(var(--heading-number-width) + 2mm);
 }

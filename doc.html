@@ -54,8 +54,8 @@
             auto: false,
             before: function () {
                 return Promise.allSettled([MathJax.typesetPromise()])
-                    .then(function () {
-                            window.PagedPolyfill.preview();
+                    .then(async function () {
+                            await window.PagedPolyfill.preview();
                         }
                     );
             },
@@ -65,8 +65,23 @@
         };
     </script>
     <script src="js/paged.polyfill.min.js"></script>
+    <script src="js/toc.js"></script>
 </head>
 <body>
+$TITLE_CONTENTS
+
+<div class="emu-heading-container"></div>
+<h1 class="emu-chapter-heading">
+    <span class="emu-heading-doc-id">$TITLE &dash;</span>
+    <span class="emu-heading-doc-name">$NAME</span>
+    <br>
+    <span class="emu-chapter-name">Table of contents</span>
+</h1>
+
+<div class="emu-body-container">
+    <div id="emu-toc"></div>
+</div>
+
 $CONTENTS
 </body>
 </html>

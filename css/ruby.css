@@ -1,0 +1,15 @@
+ruby {
+    margin: 0.1in 0.1in;
+
+    rt {
+        user-select: none;
+        -moz-user-select: none;
+
+        font-size: var(--small-font-size);
+        font-family: var(--sans-serif);
+    }
+}
+
+.emu-pg {
+    line-height: 2.5;
+}

@@ -30,6 +30,7 @@
 @import "lists.css";
 @import "paged.css";
 @import "ref.css";
+@import "ruby.css";
 @import "title_page.css";
 @import "toc.css";
 
@@ -57,7 +58,8 @@ html .emu-title-page {
     background-color: hsl(0, 0%, 80%);
 }
 
-body, div.emu-body-container {
+body,
+div.emu-body-container {
     font-family: var(--sans-serif);
 }
 
@@ -76,11 +78,13 @@ table:not(.emu-img-table, .emu-title-table) {
         border-collapse: collapse;
     }
 
-    th, td {
+    th,
+    td {
         padding: 1mm 5mm;
     }
 
-    th, .emphasis {
+    th,
+    .emphasis {
         font-weight: var(--extra-bold);
         font-stretch: 75%;
     }

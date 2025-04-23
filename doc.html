@@ -1,36 +1,15 @@
-<!--
-    Copyright (c) 2024-2025 PANDURANCE RACING
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.
--->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>NOD - EMU Autogen</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-          referrerpolicy="no-referrer" rel="stylesheet"/>
-    <style type="text/css">
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        referrerpolicy="no-referrer" rel="stylesheet">
+    <style>
         @page {
             $CSS_CUSTOMIZATIONS
         }
@@ -55,33 +34,35 @@
             before: function () {
                 return Promise.allSettled([MathJax.typesetPromise()])
                     .then(async function () {
-                            await window.PagedPolyfill.preview();
-                        }
+                        await window.PagedPolyfill.preview();
+                    }
                     );
             },
             after: function () {
-                $$(document.body).prepend("<div id='emu-loaded'>&nbsp</div>");
+                $$(document.body).prepend("<div id=\"emu-loaded\">&nbsp;</div>");
             }
         };
     </script>
     <script src="js/paged.polyfill.min.js"></script>
     <script src="js/toc.js"></script>
 </head>
+
 <body>
-$TITLE_CONTENTS
+    $TITLE_CONTENTS
 
-<div class="emu-heading-container"></div>
-<h1 class="emu-chapter-heading">
-    <span class="emu-heading-doc-id">$TITLE &dash;</span>
-    <span class="emu-heading-doc-name">$NAME</span>
-    <br>
-    <span class="emu-chapter-name">Table of contents</span>
-</h1>
+    <div class="emu-heading-container"></div>
+    <h1 class="emu-chapter-heading">
+        <span class="emu-heading-doc-id">$TITLE &dash;</span>
+        <span class="emu-heading-doc-name">$NAME</span>
+        <br>
+        <span class="emu-chapter-name">Table of contents</span>
+    </h1>
 
-<div class="emu-body-container">
-    <div id="emu-toc"></div>
-</div>
+    <div class="emu-body-container">
+        <div id="emu-toc"></div>
+    </div>
 
-$CONTENTS
+    $CONTENTS
 </body>
+
 </html>

@@ -89,3 +89,7 @@ table:not(.emu-img-table, .emu-title-table) {
         font-stretch: 75%;
     }
 }
+
+span.footnote {
+    float: footnote;
+}

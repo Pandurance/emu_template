@@ -20,31 +20,36 @@
  * SOFTWARE.                                                                                      *
  **************************************************************************************************/
 
-a.emu-ref {
-    vertical-align: super;
-    font-size: var(--small-font-size);
-}
-
-a, a:visited {
+a, a:visited, a.footnote:after {
     text-decoration: none;
     color: var(--primary);
 }
 
+a.footnote:after {
+    content: "[REF " counter(footnote) "]";
+    vertical-align: super;
+    font-variant-position: normal;
+    font-size: var(--small-font-size);
+}
+
+div.pagedjs_footnote_content {
+    margin-top: 0.125in;
+    border-top: 0.1mm solid var(--secondary);
+
+    div.pagedjs_footnote_inner_content {
+        padding-left: 0.125in;
+
+    }
+}
+
+div.pagedjs_footnote_content:before {
+    content: "REFERENCES";
+
+    font-family: "FNT-Medium", sans-serif;
+    font-size: var(--medium-font-size);
+    color: var(--secondary)
+}
+
 a:hover {
     color: var(--primary-light);
-}
-
-div.emu-ref-container {
-    border-top: 0.1mm solid var(--secondary-light);
-    font-size: var(--small-font-size);
-    margin-top: 10mm;
-}
-
-div.emu-ref-container:empty {
-    display: none;
-    border-top: none;
-}
-
-div.emu-ref-container > span.heading {
-    font-size: var(--medium-font-size);
 }

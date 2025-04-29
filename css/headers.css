@@ -102,7 +102,12 @@ span.emu-heading-doc-name {
     &.emu-heading-doc-name {
         color: var(--primary-light);
         -webkit-text-fill-color: var(--primary-light);
+        string-set: doc-id content(text);
     }
+}
+
+span.emu-chapter-name {
+    string-set: chap-name content(text);
 }
 
 /* Styles for h2 and h3 */

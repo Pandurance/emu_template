@@ -24,11 +24,7 @@
     /* Turn off the margins to facilitate printing */
     counter-increment: page 1;
 
-    @top-right {
-        position: absolute;
-        top: 0.75in;
-        right: 0.75in;
-
+    @top-right-corner {
         content: counter(page);
         font-family: "FNT-Bold";
         font-size: var(--medium-font-size);
@@ -50,6 +46,14 @@
         font-size: var(--small-font-size);
         padding: 5mm;
         color: var(--35-gray);
+    }
+
+    @bottom-right {
+        font-family: "FNT-Light-I";
+        font-size: var(--small-font-size);
+        padding: 5mm;
+        color: var(--35-gray);
+        content: string(doc-id) " - " string(chap-name);
     }
 }
 

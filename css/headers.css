@@ -27,41 +27,27 @@
     text-decoration: none;
     font-stretch: 80%;
     padding: 1mm;
-    color: white;
+    color: var(--secondary);
 
-    &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        left: -0.5mm;
-        bottom: 0.5mm;
-        border-radius: 2mm;
-        width: 100%;
-        height: calc(1em + 0.5mm);
-        padding: 0.5mm;
-        background: var(--secondary);
-        z-index: -1;
+    span.header-number {
+        background: var(--secondary-light);
+        border: 0.5mm solid var(--secondary);
     }
 }
 
 /* Specific styles for h3 header and p with span header */
 h3 .header,
-h4 .header, /* For the reference section title only */
-p > span.header {
+h4 .header,
+/* For the reference section title only */
+p>span.header {
     position: relative;
     text-decoration: none;
     font-stretch: 80%;
-    padding: 1mm;
     color: var(--secondary);
 
-    &::after {
-        content: "";
-        background: transparent !important;
-        z-index: -1;
-    }
-
-    p > span.header {
-        padding-left: 3mm;
+    span.header-number {
+        min-height: auto;
+        padding: 0 2mm;
     }
 }
 
@@ -121,17 +107,6 @@ h3 {
     font-family: "FNT-Medium", sans-serif;
     font-size: var(--medium-font-size);
     hyphens: auto;
-
-    &::before,
-    &::after {
-        content: "";
-        border-right: 2mm solid var(--secondary);
-        border-radius: 2mm 0 0 2mm;
-    }
-
-    &::after {
-        border-radius: 0 2mm 2mm 0;
-    }
 }
 
 /* Styles for emu block header */
@@ -148,30 +123,29 @@ p span.header {
     display: inline;
     background: transparent;
     margin-right: 3mm;
-    padding-left: 3mm;
 
     &::after {
         content: "";
         border-left: 2mm solid var(--secondary-light);
         border-radius: 2mm;
+        margin-left: 2mm;
     }
-}
-
-:root {
-    --heading-number-width: 0.5in;
 }
 
 /* Header number styling */
 span.header-number {
     user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+ / Edge */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ / Edge */
 
-    width: var(--heading-number-width);
+    min-width: 1lh;
+    text-align: center;
+    margin-right: 3mm;
     display: inline-block;
-}
 
-h2 span.header-number {
-    width: calc(var(--heading-number-width) + 2mm);
+    color: white;
 }

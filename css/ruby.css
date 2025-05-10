@@ -1,13 +1,9 @@
-ruby {
-    margin: 0.1in 0.1in;
+rt {
+    margin: 0 0.1in;
+    user-select: none;
+    -moz-user-select: none;
 
-    rt {
-        user-select: none;
-        -moz-user-select: none;
-
-        font-size: var(--small-font-size);
-        font-family: var(--sans-serif);
-    }
+    font-family: var(--sans-serif);
 }
 
 .emu-pg {

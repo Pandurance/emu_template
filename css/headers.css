@@ -108,12 +108,16 @@ h2 {
     font-family: "FNT-Bold", sans-serif;
     font-size: var(--large-font-size);
     hyphens: auto;
+
+    break-after: avoid;
 }
 
 h3 {
     font-family: "FNT-Medium", sans-serif;
     font-size: var(--medium-font-size);
     hyphens: auto;
+
+    break-after: avoid;
 }
 
 /* Styles for emu block header */

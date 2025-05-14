@@ -38,16 +38,10 @@ div.emu-img-desc-container {
 
     font-size: 8pt !important;
 
-    background: repeating-linear-gradient(
-            -45deg,
-            hsl(0 0% 90% / 75%),
-            hsl(0 0% 90% / 75%) 1cm,
-            hsl(0 0% 80% / 75%) 1cm,
-            hsl(0 0% 80% / 75%) 2cm
-    );
+    background: hsl(0 0% 80% / 75%) 1cm;
     hyphens: auto;
 
-    padding-left: 1mm;
+    padding: 0 2mm;
 }
 
 table.emu-img-table img {

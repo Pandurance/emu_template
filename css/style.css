@@ -83,7 +83,7 @@ table:not(.emu-img-table, .emu-title-table) {
 
     th,
     .emphasis {
-        font-weight: var(--extra-bold);
+        font-family: "FNT-Medium";
         font-stretch: 75%;
     }
 }

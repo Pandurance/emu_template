@@ -58,8 +58,11 @@
 }
 
 @page :first {
-    counter-reset: page 0;
-    margin: 0 !important;
+    margin: 0;
+
+    @top-right-corner {
+        content: "";
+    }
 
     @right-middle {
         content: "";
@@ -71,11 +74,5 @@
 
     @bottom-left {
         content: "";
-    }
-}
-
-@media screen {
-    div.pagedjs_page {
-        border: 0.1mm solid black;
     }
 }

@@ -20,7 +20,9 @@
  * SOFTWARE.                                                                                      *
  **************************************************************************************************/
 
-a, a:visited, a.footnote:after {
+a,
+a:visited,
+a.footnote:after {
     text-decoration: none;
     color: var(--primary);
 }
@@ -46,10 +48,14 @@ div.pagedjs_footnote_content:before {
     content: "REFERENCES";
 
     font-family: "FNT-Medium", sans-serif;
-    font-size: var(--medium-font-size);
+    font-size: var(--body-font-size);
     color: var(--secondary)
 }
 
 a:hover {
     color: var(--primary-light);
+}
+
+a.emu-future-ref {
+    font-family: 'FNT-Medium';
 }

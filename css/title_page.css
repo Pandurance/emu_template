@@ -20,35 +20,9 @@
  * SOFTWARE.                                                                                      *
  **************************************************************************************************/
 
-.emu-title-table {
-    position: absolute;
-    bottom: 0;
-    left: 0.75in;
-
-    font-family: "FNT-Normal";
-    font-size: var(--medium-font-size);
-
-    th {
-        padding-right: 2em;
-        text-align: right;
-        font-family: "FNT-Bold";
-    }
-}
-
 .emu-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20mm;
-    width: 400mm;
-    height: 297mm;
-}
-
-.emu-doc-title {
-    font-size: var(--very-large-font-size);
-    font-family: "FNT-Black", sans-serif;
-    hyphens: auto;
-    width: 90%;
-
-    text-align: right;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    break-before: avoid-page;
 }

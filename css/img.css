@@ -24,6 +24,7 @@ img {
     border: 0.1mm solid black;
     border-radius: var(--medium-border-radius);
     margin-bottom: 0;
+    max-width: 100%;
 }
 
 table.emu-img-table {

@@ -34,6 +34,11 @@ a.footnote:after {
     font-size: var(--small-font-size);
 }
 
+a.emu-ref {
+    font-size: var(--small-font-size);
+    vertical-align: super;
+}
+
 div.pagedjs_footnote_content {
     margin-top: 0.125in;
     border-top: 0.1mm solid var(--secondary);

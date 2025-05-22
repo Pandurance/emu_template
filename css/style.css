@@ -67,6 +67,7 @@ table:not(.emu-img-table) {
     border-collapse: collapse;
     padding-left: 3mm;
     break-inside: avoid;
+    width: 100%;
 
     th {
         border-bottom: 0.5mm solid black;

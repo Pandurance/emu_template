@@ -25,13 +25,18 @@ ol {
 
     li::before {
         display: inline-block;
-        padding: 0 0.5ch;
+        padding-right: 0.5ch;
         content: attr(data-item-num);
 
         font-family: "FNT-Bold";
         color: var(--tertiary);
-        vertical-align: middle;
     }
+}
+
+.emu-end-list-idx {
+    font-family: "FNT-Bold";
+    color: var(--tertiary);
+    padding-right: 0.5ch;
 }
 
 ul {
